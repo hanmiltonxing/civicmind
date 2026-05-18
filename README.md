@@ -6,7 +6,7 @@ Users can deploy CivicMind in two main ways: local deployment or cloud deploymen
 
 Backend setup:
 
-cd /home/wei/Downloads/clearlens/clearlens-backend
+cd clearlens/clearlens-backend
 python3 -m venv .venv
 ./.venv/bin/python -m pip install -r requirements.txt
 cp .env.example .env
