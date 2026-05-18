@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CivicMind Settings</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main class="settings-shell">
+      <h1>CivicMind Backend Settings</h1>
+      <p class="settings-copy">
+        Configure the backend URL used by CivicMind. The backend can run against either a Google Cloud Vertex AI Gemma deployment or a local Ollama model, depending on the backend environment settings.
+      </p>
+
+      <label class="settings-label" for="backend-url">Backend URL</label>
+      <input
+        id="backend-url"
+        class="settings-input"
+        type="url"
+        placeholder="http://localhost:8000 or https://your-service.run.app"
+      >
+
+      <div class="settings-actions">
+        <button id="save-button" class="primary-button" type="button">Save</button>
+        <button id="reset-button" class="secondary-button" type="button">Reset Default</button>
+      </div>
+
+      <p id="status" class="settings-status" aria-live="polite"></p>
+      <p class="settings-hint">
+        The default value works for a local backend. If you deploy the FastAPI backend to Cloud Run, replace it with the matching `https://...run.app` URL.
+      </p>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>
