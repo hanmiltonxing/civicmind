@@ -1,4 +1,3 @@
-Below is a clean English local installation guide you can use in a README or project handoff.
 
 **Local Installation Guide**
 
